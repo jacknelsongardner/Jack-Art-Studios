@@ -270,3 +270,23 @@ img, video { max-width: 100%; height: auto; }
   .lg\:px-16 { padding-left: 4rem; padding-right: 4rem; }
   .lg\:text-6xl { font-size: 3.75rem; line-height: 1; }
 }
+
+#guitar-lessons {
+  scroll-margin-top: 100px;
+}
+
+#piano-lessons {
+  scroll-margin-top: 100px;
+}
+
+#free-lesson {
+  scroll-margin-top: 100px;
+}
+
+#math-tutoring {
+  scroll-margin-top: 100px;
+}
+
+#get-in-touch {
+  scroll-margin-top: 100px;
+}
