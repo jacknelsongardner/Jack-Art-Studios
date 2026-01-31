@@ -123,7 +123,7 @@
 
 
 <div id="szv4tfi"><section class="code-section bg-white pt-20 pb-16 overflow-hidden" id="szv4tfi" style="background-color: rgb(255, 255, 255);">
-  <div class="" style=" margin-top: -100px;  background-attachment: fixed;">
+  <div class="" style="background-attachment: fixed;">
        
     <div data-landingsite-carousel-item="" class="relative flex w-full flex-shrink-0 group">
       <div class="relative w-full h-[1200px] sm:h-[900px]">
@@ -426,7 +426,7 @@
           </p>
         </div>
 
-        <div class="bg-gradient-to-br from-[rgb(253, 131, 255)] to-[rgb(200, 100, 200)] bg-opacity-20 backdrop-blur-lg rounded-xl p-6 border border-white border-opacity-30" style="box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); background-color:rgb(255, 199, 59);">
+        <div class="bg-gradient-to-br from-[rgb(253, 131, 255)] to-[rgb(200, 100, 200)] bg-opacity-20 backdrop-blur-lg rounded-xl p-6 border border-white border-opacity-30" style="box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); background-color:rgb(255, 193, 59);">
           <div class="text-5xl mb-3 text-white">📐</div>
           <h3 class="font-[var(--font-family-heading)] text-xl font-bold text-white mb-2">
         Math Tutoring
@@ -451,7 +451,7 @@
 
       <div   id="myHiddenDiv" style="width:100%; display:none;
                   max-width:800px; margin:0 auto; align-items: center; justify-content: center;
-                  margin-bottom: 50px;">
+                  margin-bottom: 20px;">
 
                 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe-Nzeqle5ghhcs6IV6m_Js6E6DzPLEdQBLlQq4xTRooK4jng/viewform?embedded=true"     
                 class="iframe-desktop" 
@@ -493,7 +493,7 @@
   <div class="absolute top-0 left-0 w-64 h-64 bg-white opacity-10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" style="background-color: rgb(255, 255, 255);"></div>
   <div class="absolute bottom-0 right-0 w-96 h-96 bg-white opacity-10 rounded-full blur-3xl translate-x-1/2 translate-y-1/2" style="background-color: rgb(255, 255, 255);"></div>
   <div class="container mx-auto px-4 relative z-10">
-    <div class="max-w-4xl mx-auto text-center">
+    <div class="max-w-4xl mx-auto text-center" STYLE="margin-top: 200px; margin-bottom: -150px;">
       <!-- Heading -->
       <h2 class="font-[var(--font-family-heading)] text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
         Refer friends, get free lessons!
@@ -537,12 +537,53 @@
       </div>
 
       <!-- CTA Buttons -->
-      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+      <a onclick="
+          document.getElementById('myHiddenDiv2').style.display='flex';
+          this.style.display='none';
+        "
+          style="
+                margin-bottom: 50px;"
+          class="inline-block bg-[var(--accent3-color)] text-white px-8 py-4 rounded-[var(--button-rounded-radius)] font-[var(--font-family-body)] font-bold text-lg hover:bg-[#2ab82a] transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 w-full sm:w-auto" style="background-color: rgb(50, 205, 50);">
+          Contact Form
+      </a>
+
         
-        <a href="https://forms.gle/CWpLj2Qq2GvsAUCDA" class="inline-block bg-[var(--accent3-color)] text-white px-8 py-4 rounded-[var(--button-rounded-radius)] font-[var(--font-family-body)] font-bold text-lg hover:bg-[#2ab82a] transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 w-full sm:w-auto" style="background-color: rgb(50, 205, 50);">
-          Submit a Referral
-        </a>
-      </div>
+
+      <div   id="myHiddenDiv2" style="width:100%; display:none;
+                  max-width:800px; margin:0 auto; align-items: center; justify-content: center;
+                  margin-bottom: 20px;">
+
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeet0h_bL6uTJSydVJZuq-X_JfIEEOy6uHnr38bP34Ym-3OoQ/viewform?embedded=true"     
+                class="iframe-desktop" 
+                width="800" 
+                height="960" 
+                frameborder="0" 
+                marginheight="0" 
+                marginwidth="0"
+                scrolling="no">Loading…</iframe>
+
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeet0h_bL6uTJSydVJZuq-X_JfIEEOy6uHnr38bP34Ym-3OoQ/viewform?embedded=true"     
+                class="iframe-mobile" 
+                width="600" 
+                height="1100" 
+                frameborder="0" 
+                marginheight="0" 
+                marginwidth="0"
+                scrolling="no">Loading…</iframe>
+
+        </div>
+
+        <style>
+        /* default = desktop */
+        .iframe-desktop { display: block; }
+        .iframe-mobile { display: none; }
+
+        /* below 800px → show mobile */
+        @media (max-width: 799px) {
+          .iframe-desktop { display: none; }
+          .iframe-mobile { display: block; }
+        }
+        </style>
 
       <!-- Fine Print -->
       <p class="font-[var(--font-family-body)] text-white text-opacity-80 text-sm mt-8">
@@ -552,7 +593,10 @@
     </div>
   </div>
 </section>
-</div><div id="global-footer"><footer id="global-footer" class="code-section bg-[var(--dark-background-color)] text-white py-16" style="background-color: rgb(31, 41, 51);">
+</div>
+
+
+<div id="global-footer"><footer id="global-footer" class="code-section bg-[var(--dark-background-color)] text-white py-16" style="background-color: rgb(31, 41, 51);">
   <div class="container mx-auto px-4">
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
       <!-- Logo & Description -->
