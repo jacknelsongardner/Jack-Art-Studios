@@ -290,3 +290,58 @@ img, video { max-width: 100%; height: auto; }
 #get-in-touch {
   scroll-margin-top: 100px;
 }
+
+
+.art-column {
+  position: relative;
+  max-width: 420px; /* standard column size */
+  width: 100%;
+  margin: 0 auto;
+}
+
+.art-item {
+  position: relative;
+}
+
+.art-item img {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+/* overlap with more space */
+.art-item:not(:first-child) {
+  margin-top: -90px;
+}
+
+/* alternating offsets */
+.art-item.left {
+  transform: translateX(-24px);
+}
+
+.art-item.right {
+  transform: translateX(24px);
+}
+
+/* glow blobs */
+.glow {
+  position: absolute;
+  top: -24px;
+  width: 280px;
+  height: 280px;
+  border-radius: 32px;
+  opacity: 0.2;
+  filter: blur(48px);
+  z-index: -1;
+}
+
+.glow-accent {
+  right: -24px;
+  background-color: rgb(255, 99, 71);
+}
+
+.glow-primary {
+  left: -24px;
+  background-color: rgb(70, 130, 180);
+}
