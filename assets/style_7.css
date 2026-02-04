@@ -304,7 +304,7 @@ img, video { max-width: 100%; height: auto; }
 }
 
 .art-item img {
-  width: 100%;
+  width: 350px;
   display: block;
   border-radius: 16px;
   box-shadow: 0 20px 40px rgba(0,0,0,0.25);
